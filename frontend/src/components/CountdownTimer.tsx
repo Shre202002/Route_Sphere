@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import "react-datepicker/dist/react-datepicker-cssmodules.css"
 
 interface CountdownProps {
   targetDate: Date;
