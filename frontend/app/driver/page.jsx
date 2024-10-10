@@ -16,10 +16,10 @@ const page = () => {
   return (
     <div className="flex flex-col items-center p-4 font-sans min-h-screen bg-custom-gradient flex flex-col">
       {/* Top Section */}
-      <div className="w-full max-w-7xl flex flex-col items-center mb-8">
+      <div className="w-full max-w-7xl flex flex-col items-center mb-8 mt-40">
         <div className="flex justify-between w-full max-w-xl mb-4">
-          <div>
-            <h2 className="text-xl font-bold">Start Point</h2>
+          <div className=''>
+            <h2 className="text-xl font-bold border-4 border-red-700">Start Point</h2>
             <p className="text-lg">Anand Vihar</p>
           </div>
           <div>
@@ -28,7 +28,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-4xl h-96 mt-4">
+        <div className="w-full max-w-4xl h-96 mt-4 ">
           <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
             <GoogleMap
               mapContainerStyle={containerStyle}
@@ -56,8 +56,8 @@ const page = () => {
         <div className="flex flex-col items-center">
           <div className="text-center">
             <div className="flex items-center mb-2">
-              <img src="/driver-icon.png" alt="Driver Icon" className="w-8 h-8 mr-2" />
-              <p className="text-lg font-semibold">Driver ID - 1023</p>
+              {/* <img src="/driver-icon.png" alt="Driver Icon" className="w-8 h-8 mr-2" /> */}
+              <p className="text-lg font-semibold text-red-500">Driver ID - 1023</p>
             </div>
             <p className="font-semibold">Dinesh Sharma</p>
           </div>
